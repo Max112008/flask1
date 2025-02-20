@@ -28,8 +28,8 @@ def promotion():
 
 @app.route('/image_mars')
 def image_mars():
-    return f'''<title>Привет, Марс!</title><h1>Жди нас, Марс!</h1><img src="{flask.url_for('static', filename='images/MARS.png')}" 
-               alt="здесь должна была быть картинка, но не нашлась">'''
+    return f'''<title>Привет, Марс!</title><h1>Жди нас, Марс!</h1><img src="{flask.url_for('static', filename='images/MARS.png')}"> 
+               <p>вот она</p>'''
 
 
 if __name__ == '__main__':
